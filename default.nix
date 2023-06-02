@@ -37,7 +37,7 @@ let m8c-package =
       };
 
       installFlags = [ "PREFIX=$(out)" ];
-      nativeBuildInputs = [ gnumake ];
+      nativeBuildInputs = [ gnumake gcc pkgconfig ];
       buildInputs = [ SDL2 libserialport ];
     };
 in {
